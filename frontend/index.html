@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binge Watcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Watchlist Toggle Button -->
+    <button id="watchlistToggle" class="watchlist-btn">
+            See Watchlist
+        <span id="watchlistCount" class="badge">0</span>
+    </button>
+
+    <!-- Background Blur Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Sidebar (Watchlist Panel) -->
+    <aside id="watchlistSidebar" class="sidebar">
+        <h2>Your Watchlist</h2>
+        <div id="watchlist" class="grid"></div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <h1>Binge Watcher</h1>
+        <p class="subtitle">Search and track your favorite movies & shows</p>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search movies and shows..."
+                onkeypress="handleKeyPress(event)"
+            >
+            <button onclick="searchMovies()">Search</button>
+        </div>
+
+        <!-- Results -->
+        <section>
+            <h2>Results</h2>
+            <div id="results" class="grid"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
