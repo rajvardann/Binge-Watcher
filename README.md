@@ -40,6 +40,7 @@ A full-stack web application that allows users to search, track, and manage movi
 ---
 
 ## How to Run the Project
+NOTE : You will need to install Node.js into your computer to run this project.
 
 ### 1. Clone the repository
 
